@@ -274,6 +274,16 @@ textarea {
     font-size: 11pt;
   }
 }
+@media screen and (max-width: 1350px) {
+  #wrapper {
+    width: 100%;
+  }
+  #main {
+    width: 100% !important;
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+  }
+}
 
 @media screen and (max-width: 480px) {
   body,
@@ -843,6 +853,12 @@ ul.actions.fit.stacked {
     margin-left: -0.5rem;
   }
 }
+.buttoncontainer {
+  text-align: center !important;
+}
+.heading {
+  font-weight: 700;
+}
 
 /* Icons */
 
@@ -1037,7 +1053,7 @@ button:disabled,
   max-width: 100%;
   opacity: 0.95;
   position: relative;
-  text-align: center;
+  text-align: left;
   width: 27em;
 }
 

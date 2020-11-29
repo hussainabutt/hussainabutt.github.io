@@ -36,10 +36,12 @@
 							<h2>Full Stack Web Developer</h2>
 						
 						<footer>
+							<div class="buttoncontainer">
 							<ul class="icons">
 								<li><a href="https://github.com/hussainabutt" target="_blank" class="icon brands fa-github">github</a></li>
 								<li><a href="https://www.linkedin.com/in/hussain-butt-278174195" target="_blank" class="icon brands fa-linkedin">linkedin</a></li>
 							</ul>
+						</div>
 						</footer>
 					</section>
 					<section id ="main" class="profile">
@@ -50,9 +52,10 @@
 					</section>
 					<div class="projectcontainer">
 					<section id ="main" class="projects">
-						<h2>S&J Architects</h2>
+						<h2 class="heading">S&J Architects</h2>
+						<div class="buttoncontainer"><a href="https://github.com/ls-build-week/bw-unit1" class="icon brands fa-github fa-3x"></a></div>
 						<p>Custom marketing website utilizing advanced CSS styling, built for Smith and Jones Architects.</p>
-						<p>implemented</p>
+						<p class="heading">implemented</p>
 						<ul>
 							<li>semantic HTML</li>
 							<li>css flexbox</li>
@@ -60,13 +63,12 @@
 							<li>responsive design</li>
 							<li>search engine optimization</li>
 						</ul>
-						<p>Checkout the source code:</p>
-						<a href="https://github.com/ls-build-week/bw-unit1" class="icon brands fa-github fa-3x"></a>
 					</section>
 					<section id ="main" class="projects">
-						<h2>African Marketplace</h2>
+						<h2 class="heading">African Marketplace</h2>
+						<div class="buttoncontainer"><a href="https://github.com/African-Marketplace-729/frontend"  target="_blank" class="icon brands fa-github fa-3x"></a></div>
 						<p>Helped empower small business owners, particularly women in south-east Africa, by developing a platform to enable these business owners to create listing for items they have for sale.</p>
-						<p>implemented</p>
+						<p class="heading">implemented</p>
 						<ul>
 							<li>DOM manipulation</li>
 							<li>React Components</li>
@@ -74,13 +76,12 @@
 							<li>styled-components</li>
 							<li>Yup form validation</li>
 						</ul>
-						<p>Checkout the source code:</p>
-						<a href="https://github.com/African-Marketplace-729"  target="_blank" class="icon brands fa-github fa-3x"></a>
 					</section>
 					<section id ="main" class="projects">
-						<h2>Water my plants</h2>
+						<h2 class="heading">Water my plants</h2>
+						<div class="buttoncontainer"><a href="https://github.com/BuildWeek-Water-My-Plants/front-end" target="_blank" class="icon brands fa-github fa-3x"></a></div>
 						<p>Built an app to help solve the problem of making sure that plant owners are consistently watering their plants.</p>
-						<p>implemented</p>
+						<p class="heading">implemented</p>
 						<ul>
 							<li>Redux state Management</li>
 							<li>material-UI</li>
@@ -88,13 +89,12 @@
 							<li>React-Hook-form</li>
 							<li>Jest testing</li>
 						</ul>
-						<p>Checkout the source code:</p>
-						<a href="https://github.com/BuildWeek-Water-My-Plants" target="_blank" class="icon brands fa-github fa-3x"></a>
 					</section>
 					<section id ="main" class="projects">
-						<h2>Virtual Reality Funding Platform</h2>
+						<h2 class="heading">Virtual Reality Funding Platform</h2>
+						<div class="buttoncontainer"><a href="https://github.com/BuildWeek-VRFunding/Backend" target="_blank" class="icon brands fa-github fa-3x"></a></div>
 						<p>Built a platform that provides tech entrepreneurs with limited resources access to business training, project capital raising and mentoring. </p>
-						<p>implemented</p>
+						<p class="heading">implemented</p>
 						<ul>
 							<li>NodeJS with express framework</li>
 							<li>Authentication using json web tokens</li>
@@ -103,14 +103,12 @@
 							<li>built database utilizing knex and sqlite3</li>
 							<li>Deployed API using Heroku</li>
 						</ul>
-						<p>Checkout the source code:</p>
-						<a href="https://github.com/BuildWeek-VRFunding/Backend" target="_blank" class="icon brands fa-github fa-3x"></a>
 					</section>
 				</div>
 				<section id ="main" class="outro">
 					<p>Thanks for Visting!</p>
 					<p>Want to get in touch with me? </br> Shoot me an email! </br> Hussainabutt@gmail.com</p>
-					<button id="email" onclick=clipboard()>Click here to copy my email!</button>
+					<div class="buttoncontainer"><button id="email" onclick=clipboard()>Click here to copy my email!</button></div>
 				</section>
 				<!-- Footer -->
 					<footer id="footer">
@@ -126,6 +124,10 @@
 			<script>
 				function clipboard() {
 					navigator.clipboard.writeText("hussainabutt@gmail.com")
+					document.getElementById("email").textContent = 'Copied!'
+					setTimeout(() => {
+						document.getElementById("email").textContent = 'Click here to copy my email!'
+					}, 1000);
 				}
 				if ('addEventListener' in window) {
 					window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-preload\b/, ''); });
