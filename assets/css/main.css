@@ -858,8 +858,14 @@ ul.actions.fit.stacked {
 }
 .heading {
   font-weight: 700;
+  text-align: center;
 }
-
+.intro h1{
+  text-align: center;
+}
+.intro h2{
+  text-align: center;
+}
 /* Icons */
 
 ul.icons {
@@ -1032,6 +1038,9 @@ button:disabled,
 }
 
 /* Main */
+.profile{
+  text-align: center !important;
+}
 
 #main {
   -moz-transform-origin: 50% 50%;
@@ -1047,7 +1056,7 @@ button:disabled,
   -ms-transition: opacity 1s ease, -ms-transform 1s ease;
   transition: opacity 1s ease, transform 1s ease;
   padding: 4.5em 3em 3em 3em;
-  background: #ffffff;
+  background: #f4f4f4;
   border-radius: 4px;
   cursor: default;
   max-width: 100%;
@@ -1085,17 +1094,18 @@ button:disabled,
   margin-top: 2rem;
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-around;
-  width: 70%;
+  justify-content: space-between;
+  width: 100%;
 }
 .profile {
   margin-top: 2rem;
-  width: 70% !important;
+  width: 100% !important;
 }
 .projects {
   margin-top: 2rem;
   text-align: center;
   vertical-align: middle;
+  width: calc(100% / 2 - 25px) !important;
 }
 .outro {
   margin-top: 2rem;
@@ -1185,6 +1195,8 @@ body.is-preload #main {
   min-height: 100%;
   padding: 1.5em;
   z-index: 2;
+  max-width: 1350px;
+  margin: 0 auto;
 }
 
 #wrapper > * {

@@ -126,9 +126,6 @@
 				function clipboard() {
 					navigator.clipboard.writeText("hussainabutt@gmail.com")
 					document.getElementById("email").textContent = 'Copied!'
-					setTimeout(() => {
-						document.getElementById("email").textContent = 'Click here to copy my email!'
-					}, 1000);
 				}
 				if ('addEventListener' in window) {
 					window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-preload\b/, ''); });
